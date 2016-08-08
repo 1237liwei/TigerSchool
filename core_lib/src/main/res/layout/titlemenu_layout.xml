@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/titlemenu_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/title_list"
+        android:layout_width="@dimen/width_126dp"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_e8e8e8"
+        android:dividerHeight="@dimen/dimens_0.5"
+        android:listSelector="@drawable/layout_selector"
+        android:cacheColorHint="@color/transparent"
+        android:scrollingCache="false" />
+
+</LinearLayout>

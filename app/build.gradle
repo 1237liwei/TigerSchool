@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    lintOptions {
+        abortOnError false
+        ignoreWarnings true
+    }
+
+    defaultConfig {
+        applicationId "com.tydc.tigerschool"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs{
+        release {
+            storeFile file("tiger_school.keystore")
+            storePassword "egocbd!@#"
+            keyAlias "zjxl"
+            keyPassword "egocbd!@#"
+        }
+
+    }
+    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+        release {
+            // 移除无用的resource文件
+            shrinkResources true
+            //混淆编译
+            minifyEnabled true
+            proguardFiles 'proguard.cfg'
+            signingConfig signingConfigs.release
+        }
+        debug{
+            // 移除无用的resource文件
+            shrinkResources true
+//       //混淆编译
+//       minifyEnabled true
+//       proguardFiles 'proguard.cfg'
+         signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile project(':core_lib')
+}

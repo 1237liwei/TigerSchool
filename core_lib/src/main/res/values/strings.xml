@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">core_lib</string>
+    <string name="network_exception_tips">网络不给力</string>
+    <string name="server_response_data_error">服务器返回的数据格式错误!</string>
+    <string name="xlistview_header_hint_normal">下拉可以刷新</string>
+    <string name="xlistview_header_hint_ready">松开立即刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="common_click_retry">重新加载</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/common_loading_round_black"
+    android:padding="12dip">
+
+	<RelativeLayout
+	    android:layout_width="@dimen/width_100dp"
+	    android:layout_height="@dimen/width_100dp" >
+	    <ImageView
+	        android:layout_centerInParent="true"
+	        android:id="@+id/iv_loading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/za_loading" />
+	    <ImageView
+	         android:layout_centerInParent="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/za_loading_car" />
+	</RelativeLayout>
+
+	<TextView
+        android:id="@+id/tv_common_waiting_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:text=""
+        android:textSize="@dimen/font_size_18"
+        android:visibility="gone" />
+</RelativeLayout>
